@@ -15,7 +15,7 @@
 <?php
     $page_title = "Research Topics";
     $css_path = "../css/carl_css/site.css";
-    $main_id = "research";
+    $main_id = "research"; 
 
     include('../php/carl/inc.research_topics.php');
     include('inc.header.php');
