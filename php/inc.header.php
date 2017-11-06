@@ -15,23 +15,20 @@
     <title><?php echo $page_title; ?></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="<?php echo $css_path; ?>" rel="stylesheet">
-  </head>
-    <body>
-    <header>
+    <link href = "../../Phase4/<?php echo $css_path ?>" rel="stylesheet" type="text/css">
       <div id="header">
         <div id="site_title">
             <img src="../images/biosci.png" alt="Biological Sciences">
         </div><!-- end div id="site_title" -->
         <div class="slidemove">
-            <img class="slider" src="../images/collacting.jpg" style="width:100%">
-            <img class="slider" src="../images/experiment.jpg" style="width:100%">
-            <img class="slider" src="../images/frog.jpg" style="width:100%">
-            <img class="slider" src="../images/microscope.jpg" style="width:100%">
-            <img class="slider" src="../images/thegroup.jpg" style="width:100%">
-            <img class="slider" src="../images/theguy.jpg" style="width:100%">
-            <img class="slider" src="../images/thelady.jpg" style="width:100%">
-            <img class="slider" src="../images/verybig.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/collacting.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/experiment.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/frog.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/microscope.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/thegroup.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/theguy.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/thelady.jpg" style="width:100%">
+            <img class="slider" src="../images/slidemove/verybig.jpg" style="width:100%">
         </div> <!--end div class="slidemove" -->
 
         <script> 
@@ -101,6 +98,8 @@
                 <li><a href="Contact.html">Contact Us</a></li>
             </ul>  
         </div><!--end div id="menu" -->
-      </nav>    
-    </header>
+      </nav>
+  </head>
+    <body>
+
     <main id="<?php echo $main_id; ?>">

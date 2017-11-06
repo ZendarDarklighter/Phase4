@@ -1,6 +1,6 @@
 <?php
     $page_title = "Student Resource Home";
-    $css_path = "../css/style.css";
+    $css_path = "css/style.css";
     $main_id = "stres_home";
     include('../php/inc.header.php');
 ?>

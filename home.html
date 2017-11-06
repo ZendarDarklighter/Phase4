@@ -1,3 +1,143 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biological Sciences - Home</title>
 
+    
+<link href="../Phase4/css/style2.css" rel="stylesheet" type="text/css" />
+        <div id="header">
+            <div id="site_title"> 
+                <img src="images/biosci.png">
+            </div> 
+            <div class="slidemove">
+  <img class="slider" src="images/collacting.jpg" style="width:100%">
+  <img class="slider" src="images/experiment.jpg" style="width:100%">
+  <img class="slider" src="images/frog.jpg" style="width:100%">
+  <img class="slider" src="images/microscope.jpg" style="width:100%">
+  <img class="slider" src="images/thegroup.jpg" style="width:100%">
+  <img class="slider" src="images/theguy.jpg" style="width:100%">
+  <img class="slider" src="images/thelady.jpg" style="width:100%">
+  <img class="slider" src="images/verybig.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slider");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="Home.html"> Home </a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Undergraduate</a>
+                    <div class="dropdown-content">
+                        <a href="Home-UG.html">Undergrad Home</a>
+                        <a href="#">Ecology, Evolution, and Environment</a>
+                        <a href="Undergrad-major.html">Genetics and Cellular Biology</a>
+                        <a href="#">Integrative Biology</a>
+                        <a href="#">Medical Sciences</a>
+                        <a href="#">Medical Technology</a>
+                        <a href="#">Biology Minor</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Graduate</a>
+                    <div class="dropdown-content">
+                        <a href="Home-G.html">Grad Home</a>
+                        <a href="Re_Topic.html">Research Topics</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Student Resources</a>
+                    <div class="dropdown-content">
+                        <a href="Home-SR.html">Resources Home</a>
+                        <a href="Tut_Home.html">Tutoring</a>
+                        <a href="Software.html">Software</a>
+                        <a href="Adv_Home.html">Advising</a>
+                        <a href="Course_Home.html">Course Information</a>
+                        <a href="Jobs-JM.html">Job Market Info</a>
+                        <a href="Jobs-IO.html">Internship Opportunities</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Clubs and Events</a>
+                    <div class="dropdown-content">
+                        <a href="Home-CE.html">Clubs and Events Home</a>
+                        <a href="Seminars.html">Seminars</a>
+                        <a href="Stud_Org_Home.html">Student Organizations</a>
+                    </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Facilities</a>
+                    <div class="dropdown-content">
+                        <a href="Home-Faci.html">Facilities Home</a>
+                        <a href="Facilities-L.html">Laboratory Information</a>
+                        <a href="Facilities-T.html">Take a Tour</a>
+                    </div>
+                </li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>  
+        </div>
+</head>
+<body>
+        <div id="content_wrapper">
+            <div id="sidebar"> 
+                    <h2>Most Visited Links</h2>
+                    <ul class="side_menu">
+                        <li><a href="Course_Home.html">Course Home Page</a></li>
+                        <li><a href="Tut_Home.html">Tutoring</a></li>
+                        <li><a href="Jobs-IO.html">Internships</a></li>
+                        <li><a href="Adv_Home.html">Advising</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>  
+                    </ul>
+                
+            
+            </div>
+            
+            <div id="content">
+            
+            	<div class="post_section">
+        
+                     <div class="post_content">
+                        <button onclick="myFunction()">Go To mobile screen</button>
+                         <script>
+                            function myFunction() {
+                                var myWindow = window.open("Home-mobile.html", "", "width=350,height=550");
+                            }
+                            </script>
+                     
+                         <h3>Biological Sciences at SIUE</h3>
+                                <div style="float: right;">
+                                    <a href="https://www.facebook.com/pages/SIUE-Biological-Sciences/303941963141257" target="_blank"><img alt="Facebook logo" height="27" src="images/facebook_logoS.png" width="27" /> <strong>Follow us on Facebook</strong></a> 
+                                    
+                                    
+                                </div>
+                                <div><iframe allowfullscreen="" frameborder="0" height="267" src="https://www.youtube.com/embed/azbvGrNrmBI" style="display: block; margin-left: auto; margin-right: auto;" width="475" ></iframe></div><br><br><br>
+                                <p>The Department of Biological Sciences offers a diverse program of study that allows students to customize their academic path to prepare for numerous career opportunities in research, industry, and government, as well as advanced training in a wide range of professional and post-graduate programs. Our students have the opportunity to study in a variety of subject areas including health sciences, cell biology, molecular biology, biotechnology, genetics, microbiology, functional anatomy, physiology, ecology, evolutionary biology, wildlife management, and conservation biology.</p>
+                                <p>The mission of our department is first and foremost to challenge and engage our students, and to produce graduates with a comprehensive, integrated education in the biological sciences. We value a high level of student-faculty interaction and engagement. All of our faculty have active research programs, which provide both undergraduate and graduate students with opportunities to participate in new and ongoing projects.</p>
+                                <p>Our department, together with the SIUE campus, provides excellent facilities and many opportunities for innovative biological study. In 2013 the department moved into Science Lab West, a modern science education facility with well-appointed teaching and research labs. The department is equipped with state-of-the-art technology in microscopy, physiology, histology, cell biology, microbiology, genetics, and toxicology research, and has extensive botanical and zoological teaching collections. We have our own greenhouse and vivarium facilities for plant and animal research. The 2,660-acre SIUE campus includes a 75-acre lake, a 35-acre botanical garden, and 380 acres of forest and restored prairie set aside as the SIUE Nature Preserve, all of which serve as an outdoor classroom and research space.</p>
+                         
+                              
+
+                         
+                         
+        
+                </div>
+            </div>
+        	<div class="cleaner"></div>
+        </div> 
+    
+<div id="footer">
+    Copyright © 2017 Team BUGS
+</div>
+</body>
 </html>
