@@ -4,7 +4,7 @@
     $main_id = "stres_home";
     include('../php/inc.header.php');
 ?>
-can anything be seen
+
 <?php
     $copyright_year = "2017";
     $copyright_text = "bulshit";
