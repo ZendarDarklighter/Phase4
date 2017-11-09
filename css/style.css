@@ -7,13 +7,22 @@ body {
 	color: #fff;
     background: url("../images/back2.png");
 }
-
-#stress_home #center{
+footer{
+    position: absolute;
+    bottom: 0px;
+}
+#stres_info{
+    position: absolute;
+    left: 10%;
+    min-width: 80%;
+}
+#stres_home #center{
     position: absolute;
     border: 2px solid red;
-    width: 50px;
+    width: 75%;
     min-height: 15px;
-    left: 50%;
+    left: 25%;
+    top: 10px;
 }
 
 h1,h2{ 

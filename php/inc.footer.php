@@ -14,8 +14,8 @@
 </main>
 
     <footer>
-        <img src="../images/logo-edwardsville.png" alt="SIUE logo">
         <div>
+        <img src="../images/logo-edwardsville.png" alt="SIUE logo">
             <?php echo "$copyright_year $copyright_text";?>
         </div>
     </footer>
