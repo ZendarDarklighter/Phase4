@@ -4,8 +4,9 @@
     $main_id = "stres_home";
     include('../php/inc.header.php');
 ?>
+<script src="../../Phase4/js/sidebar.js"></script>
+
 <div id="sidebar">
-    <script src="../../Phase4/js/sidebar.js"></script>
     <script>sideBarLoad("Student Resorces","home.php","Resources Home");</script>
 </div>
 <?php
