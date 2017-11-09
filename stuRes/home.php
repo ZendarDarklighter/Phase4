@@ -7,7 +7,8 @@
 <script src="../../Phase4/js/sidebar.js"></script>
 
 <div id="sidebar">
-    <script>sideBarLoad("Student Resorces","home.php","Resources Home");</script>
+    <script>sideBarLoad("Student Resorces","home.php","Resources Home","","Tutoring","","Software","","Advising","","Course Information"
+    ,"","Job Market Info","","Internship Opportunities");</script>
 </div>
 <?php
     $copyright_year = "2017";
