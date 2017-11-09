@@ -71,8 +71,8 @@
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Student Resources</a>
                     <div class="dropdown-content">
-                        <a href="Home-SR.html">Resources Home</a>
-                        <a href="Tut_Home.html">Tutoring</a>
+                        <a href="../stuRes/home.php">Resources Home</a>
+                        <a href="../stuRes/tutor.php?subj=null">Tutoring</a>
                         <a href="Software.html">Software</a>
                         <a href="Adv_Home.html">Advising</a>
                         <a href="Course_Home.html">Course Information</a>

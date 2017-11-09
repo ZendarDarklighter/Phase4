@@ -1,7 +1,12 @@
 <?php
-    $page_title = "Student Resource Home";
+    $page_title = "Tutoring";
     $css_path = "css/style.css";
-    $main_id = "stres_home";
+    $main_id = "tutoring";
+    $subj = $_GET["subj"];
+    if($subj != "null"){
+        $page_title = "Tutoring " . $subj;
+        $main_id = $main_id . "_schedule";
+    }
     include('../php/inc.header.php');
 ?>
 <script src="../../Phase4/js/sidebar.js"></script>
