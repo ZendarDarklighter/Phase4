@@ -7,41 +7,15 @@ body {
 	color: #fff;
     background: url("../images/back2.png");
 }
-.lab_list{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
-.lab_link{
-    width: 100px;
-    height: 50px;
-    margin: 25px;
-    border: solid 2px #414E00;
-    display: block;
-    background: #B0CD4F;
-    text-align: center;
-}
-
-#teacher_list{
+#stress_home #center{
     position: absolute;
-    border: solid 2px #414E00;
-    width: 50%;
-    left: 0;
-}
-
-#lab_img{
-    position: absolute;
-    width: 70%;
-    height: 45%;
-    border: solid 2px #414E00;
-}
-#vir_tour{
-    position: absolute;
-    width: 75%;
-    height: 75%;
     border: 2px solid red;
+    width: 50px;
+    min-height: 15px;
+    left: 50%;
 }
+
 h1,h2{ 
     margin: 0; 
     padding: 0; 

@@ -10,6 +10,9 @@
     <script>sideBarLoad("Student Resorces","home.php","Resources Home","","Tutoring","","Software","","Advising","","Course Information"
     ,"","Job Market Info","","Internship Opportunities");</script>
 </div>
+<div id="center">
+    
+</div>
 <?php
     $copyright_year = "2017";
     $copyright_text = "bulshit";
