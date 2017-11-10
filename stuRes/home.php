@@ -11,11 +11,14 @@
     ,"","Job Market Info","","Internship Opportunities");</script>
 </div>
 <div id="center">
-    where is it
+    <h1>The Student Resorces Page Has it All</h1>
+    <p class="par1">
+        <!-- lot of stuff for info.  add later -->
+    </p> <!-- end of par1 -->
 </div>
 </div>
 <?php
     $copyright_year = "2017";
-    $copyright_text = "bulshit";
+    $copyright_text = "All praise the Guy.  The Guy is great and mighty!";
     include('../php/inc.footer.php');
 ?>

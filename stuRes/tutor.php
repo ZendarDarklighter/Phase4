@@ -16,11 +16,17 @@
     ,"","Job Market Info","","Internship Opportunities");</script>
 </div>
 <div id="center">
-    where is it
+    <div id="tut_base">
+    <h1>SIUE Tutoring</h1>
+    <br><br>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;The purpose of the Tutoring Resource Center is to help students succeed in their courses in a supportive learning environment. We are located in the Student Success Center 1252 and open Monday through Sunday. Students who need assistance with their SIUE courses are welcome on a walk-in basis. Individual and small group tutoring is available without an appointment. Handouts, computer software (Mathematica, Matlab, SPSS) and calculators also are available.
+    </p>
+    </div>
 </div>
 </div>
 <?php
     $copyright_year = "2017";
-    $copyright_text = "bulshit";
+    $copyright_text = "All praise the Guy.  The Guy is great and mighty!";
     include('../php/inc.footer.php');
 ?>

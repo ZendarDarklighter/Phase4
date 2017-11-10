@@ -16,14 +16,22 @@ footer{
     left: 10%;
     min-width: 80%;
 }
-#stres_home #center{
+#center{
+    color: black;
+    font-size: 18px;
+    padding: 10px 30px 30px 10px;
     position: absolute;
     border: 2px solid red;
     width: 75%;
     min-height: 15px;
     left: 25%;
     top: 10px;
+    background: white;
 }
+#center h1{
+    color: green;
+}
+
 
 h1,h2{ 
     margin: 0; 
