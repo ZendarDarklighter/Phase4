@@ -8,20 +8,50 @@
         $main_id = $main_id . "_schedule";
     }
     include('../php/inc.header.php');
+    include('../php/inc.dbcon.php');
 ?>
 <script src="../../Phase4/js/sidebar.js"></script>
 <div id="stres_info">
 <div id="sidebar">
-    <script>sideBarLoad("Student Resorces","home.php","Resources Home","tutor.php?subj=null","Tutoring","","Software","","Advising","","Course Information"
-    ,"","Job Market Info","","Internship Opportunities");</script>
+    <script>sideBarLoad("Tutoring Offered","tutor.php?subj=null","Tutoring Home","tutor.php?subj=bio","Biology","tutor.php?subj=chem","Chemestry","tutor.php?subj=phys","Physics","tutor.php?subj=math","Math");</script>
 </div>
 <div id="center">
     <div id="tut_base">
-    <h1>SIUE Tutoring</h1>
-    <br><br>
-    <p>
+        <h1>SIUE Tutoring</h1>
+        <br><br>
+        <p>
         &nbsp;&nbsp;&nbsp;&nbsp;The purpose of the Tutoring Resource Center is to help students succeed in their courses in a supportive learning environment. We are located in the Student Success Center 1252 and open Monday through Sunday. Students who need assistance with their SIUE courses are welcome on a walk-in basis. Individual and small group tutoring is available without an appointment. Handouts, computer software (Mathematica, Matlab, SPSS) and calculators also are available.
-    </p>
+        </p>
+        <br>
+        <div id="tut_gen_time">
+        <h2>Location:</h2>
+        <p>SSC Room 1252</p>
+        <br>
+        <h2>Hours:</h2>
+        <p>
+            Fall Semester (8/21/17 - 12/09/17)
+            <br>
+            Mon through Thurs: 8am - 7pm
+            <br>
+            Fri: 8am - 3pm
+            <br>
+            Sat: 9am - 12 noon
+            <br>
+            Sun: 4pm - 7pm
+            <br>
+            Finals Week - TBA
+            <br>
+        </p>
+        <br>
+        <img src="../images/TutHome.jpg">
+        </div>
+    </div>
+    <div id="tut_sch">
+        <?php
+            if($_GET['subj'] != "null"){
+                tablePrint($_GET["subj"]);
+            }
+        ?>
     </div>
 </div>
 </div>

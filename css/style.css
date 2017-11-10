@@ -31,7 +31,19 @@ footer{
 #center h1{
     color: green;
 }
+#tut_gen_time{
+    text-align: center;
+}
+#center h2{
+    color: #85CD1C;
+}
 
+#tutoring_schedule #tut_base{
+    display: none;
+}
+#tutoring #tut_xch{
+    display: none;
+}
 
 h1,h2{ 
     margin: 0; 
