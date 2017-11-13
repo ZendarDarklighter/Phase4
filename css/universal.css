@@ -1,0 +1,301 @@
+/* 
+    File: universal.css
+    Author: 
+    Team: Bugs
+    Date: 10/31/2017
+    CS-321 pahse 4
+
+    Description:    Universal css for responsive design, header, 
+                    side nav, and footer.
+                 
+*/
+
+/******  Universal styling *******/
+*{
+    border:0;
+    margin:0;
+    padding:0;
+    font-size:100%;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box; 
+}
+
+/****   Responsive Design ****/
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-7-5{width: 75%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float_right{
+    float:right;
+}
+.float_left{
+    float: left;
+}
+
+body {
+	margin: 0 10%;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+    color: #fff;
+    background: url("/phase4/images/back1.jpg");
+}
+/***    Mobile      ***/
+@media only screen and (max-width: 500px) {
+    .no_mobile{
+      display:none;
+    }
+  
+    .sidebar{
+        background-color:#fff;
+        position:fixed!important;
+        z-index:1;
+        overflow:auto;
+        height: 100%;
+    }
+    .block{
+        text-align:left;
+        padding:8px 16px;
+        display:block;
+        text-align:left;
+        border:none;
+        outline:none;
+        white-space:normal;
+        float:none;
+    }
+    .card{
+        box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+    }
+    .leftanim{
+        position:relative;
+        animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}
+    }
+
+    .baritem{
+        padding:8px 16px;
+        width:auto;
+        display:block;
+        width:100%;
+        border:none;
+        outline:none;
+        white-space:normal;
+        float:none;
+        text-align:center;
+    }
+
+    .button{
+        border:none;
+        display:inline-block;
+        outline:0;
+        padding:8px 16px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap
+    }
+
+    .button:disabled{
+        cursor:not-allowed;
+        opacity:0.3
+    }
+    .disabled *,:disabled *{pointer-events:none}
+
+    .button:hover{
+        color:#000!important;
+        background-color:#ccc!important
+    }
+    .large{
+        font-size:18px!important
+    }
+    .theme{
+        color:#fff!important;
+        background-color:darkgreen!important
+    }
+    .xlarge{
+        font-size:24px!important
+    }
+    .container:after,.container:before{
+        content:"";
+        display:table;
+        clear:both;
+        padding:0.01em 16px
+    }
+} /* end mobile design */
+
+
+@media only screen and (min-width: 1000px){
+.mobile{
+    display: none;
+}
+
+/****** Header styling  *******/
+#header {
+	width: 100%;
+	height: 200px;
+	margin: 20px auto;
+}
+
+#site_title {
+	float: left;
+	margin-top: 120px;
+    height: 200px;
+    display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+/**** Carousel style ****/
+.slidemove {
+	float: right;
+	margin-top: 120px;
+    display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.slider{
+    height: 200px;
+}
+
+.mySlides {display:none;}
+
+
+/**** nav menu style ****/
+#menu {
+	height: 50px;
+	margin: 20px auto; 
+    background: grey;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#menu li {
+    float: left;
+    font-size: 20px;
+}
+
+#menu li a, .dropbtn {
+    display: inline-block;
+    color: lightgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover,#menu .dropdown:hover .dropbtn {
+    background-color: crimson;
+}
+
+#menu li.dropdown {
+    display: inline-block;
+}
+#menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#menu .dropdown-content a:hover {background-color: #f1f1f1}
+
+#menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/****** Side nav          *******/
+#sidebar {
+	float: left;
+    background-image:
+    linear-gradient(
+      to right, 
+      darkgreen, 
+      green,
+      darkgreen
+    );
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+#sidebar h2{
+    padding: 30px;
+    text-align: center;
+}
+
+.side_menu {
+	list-style: none;
+	padding: 5px;
+	margin: 0 0 0 0;
+}
+
+.side_menu li {
+	padding: 0;
+	margin: 0;
+}
+
+.side_menu li a {
+	display: block;
+	color: lightgoldenrodyellow;
+	padding: 5px 10px;
+	font-size: 20px;
+	border-bottom: 3px solid #777777;
+}
+.side_menu li a:hover {
+	text-decoration: none;
+	background: #85CD1C;
+	color: #FFFFFF;
+}
+
+/****** Footer Styling    *******/
+footer {
+	width: 80%;
+    text-align: center;
+    bottom: 0;
+    height:60px;
+    position:absolute;
+    color: lightgray;
+}
+}/* End desktop design */
