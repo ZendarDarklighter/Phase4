@@ -6,7 +6,8 @@ $conn;
 try{
     $conn = new PDO("mysql:host=$sevad;dbname=cs321", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "<script>console.log('connected successfully');</script>";
+    
+    echo "<script>console.log('database connected');</script>";
 }
 catch(PDOException $e){
     //echo '<script> alert("somethings fucked yo"); </script>';
@@ -14,6 +15,7 @@ catch(PDOException $e){
 
 function tablePrint($course){
     global $conn;
+    $result = $conn->query("SELECT * FROM courses");
     echo '<script>console.log("start of printing table for ' . $course . '");</script>';
     echo '<table class="basic" summary="Tutoring Hours">
         <tbody>
@@ -37,11 +39,16 @@ function tablePrint($course){
         <th>Sat</th>
         <th>Sun</th>
         </tr>'; //yes its a big echo.  shut up.
-
         
+        $test = $result->fetch();
+        echo '<script>console.log("' . $test['Name'] . '");</script>';        
 
     echo '</tbody>
         </table>';
+}
+
+function softwarePrint(){
+    echo '<button class="but b">test</button>';
 }
 
 ?>

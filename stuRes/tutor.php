@@ -24,23 +24,23 @@
         </p>
         <br>
         <div id="tut_gen_time">
-        <h2>Location:</h2>
+        <h2>Location:</h2><br>
         <p>SSC Room 1252</p>
-        <br>
+        <br><br>
         <h2>Hours:</h2>
-        <p>
+        <p><br>
             Fall Semester (8/21/17 - 12/09/17)
-            <br>
+            <br><br>
             Mon through Thurs: 8am - 7pm
-            <br>
+            <br><br>
             Fri: 8am - 3pm
-            <br>
+            <br><br>
             Sat: 9am - 12 noon
-            <br>
+            <br><br>
             Sun: 4pm - 7pm
-            <br>
+            <br><br>
             Finals Week - TBA
-            <br>
+            <br><br>
         </p>
         <br>
         <img src="../images/TutHome.jpg">

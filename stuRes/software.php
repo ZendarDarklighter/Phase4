@@ -3,7 +3,9 @@
     $css_path = "css/style.css";
     $main_id = "stres_home";
     include('../php/inc.header.php');
+    include('../php/inc.dbcon.php');
 ?>
+<script src="../../Phase4/js/sidebar.js"></script>
 <script src="../../Phase4/js/sidebar.js"></script>
 <div id="stres_info">
 <div id="sidebar">
@@ -11,10 +13,8 @@
     ,"","Job Market Info","","Internship Opportunities");</script>
 </div>
 <div id="center">
-    <h1>The Student Resorces Page Has it All</h1>
-    <p class="par1">
-        <!-- lot of stuff for info.  add later -->
-    </p> <!-- end of par1 -->
+    <h1>Free Software to Make Your Life Easier</h1>
+    <?php softwarePrint(); ?>
 </div>
 </div>
 <?php

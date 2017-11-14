@@ -69,11 +69,11 @@
                         <a href="Re_Topic.html">Research Topics</a>
                     </div><!-- end div class="dropdown-content" -->
                 </li>
-                <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Student Resources</a>
+                <li class="dropdown"><a href="../stuRes/home.php" class = "dropbtn"> Student Resources</a>
                     <div class="dropdown-content">
                         <a href="../stuRes/home.php">Resources Home</a>
                         <a href="../stuRes/tutor.php?subj=null">Tutoring</a>
-                        <a href="Software.html">Software</a>
+                        <a href="../stuRes/software.php">Software</a>
                         <a href="Adv_Home.html">Advising</a>
                         <a href="Course_Home.html">Course Information</a>
                         <a href="Jobs-JM.html">Job Market Info</a>
