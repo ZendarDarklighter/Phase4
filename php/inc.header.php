@@ -74,8 +74,8 @@
                         <a href="../stuRes/home.php">Resources Home</a>
                         <a href="../stuRes/tutor.php?subj=null">Tutoring</a>
                         <a href="../stuRes/software.php">Software</a>
-                        <a href="Adv_Home.html">Advising</a>
-                        <a href="Course_Home.html">Course Information</a>
+                        <a href="../stuRes/advisor.php">Advising</a>
+                        <a href="../stuRes/course.php">Course Information</a>
                         <a href="Jobs-JM.html">Job Market Info</a>
                         <a href="Jobs-IO.html">Internship Opportunities</a>
                     </div><!-- end div class="dropdown-content" -->
