@@ -48,7 +48,17 @@ function tablePrint($course){
 }
 
 function softwarePrint(){
-    echo '<button class="but b">test</button>';
+    global $conn;
+    $result = $conn->query("SELECT * FROM software");
+
+    while($row = $result->fetch()){
+        $output = "";
+        $output = $output . '<div class="software_hold"><p><a href="' . $row['file'] . '"><button class="but b">' . $row['Name'] . '</button></a>';
+        $output = $output . '<img src="../images/' . $row['img'] . '" align="middle"></p>';
+        $output = $output . '<h3>' . $row['Name'] . ' Description:</h3>';
+        $output = $output . $row['descr'] . '</div><br><br>';
+        echo $output;
+    }
 }
 
 ?>
