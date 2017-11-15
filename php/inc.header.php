@@ -82,9 +82,9 @@
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Clubs and Events</a>
                     <div class="dropdown-content">
-                        <a href="Home-CE.html">Clubs and Events Home</a>
-                        <a href="Seminars.html">Seminars</a>
-                        <a href="Stud_Org_Home.html">Student Organizations</a>
+                        <a href="../clubs/Home_CE.php">Clubs and Events Home</a>
+                        <a href="../clubs/seminar.php">Seminars</a>
+                        <a href="../clubs/clubs.php">Student Organizations</a>
                     </div><!-- end div class="dropdown-content" -->
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Facilities</a>

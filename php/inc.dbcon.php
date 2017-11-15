@@ -39,9 +39,17 @@ function tablePrint($course){
         <th>Sat</th>
         <th>Sun</th>
         </tr>'; //yes its a big echo.  shut up.
-        
-        $test = $result->fetch();
-        echo '<script>console.log("' . $test['Name'] . '");</script>';        
+        while($row = $result->fetch()){
+            echo '<tr><td><p>' . $row['Dep'] . ' ' . $row['Name'] . '</p></td>';
+            echo '<td align="center" valign="bottom">' . $row['Mon'] . '</td>
+            <td align="center" valign="bottom">' . $row['Tue'] . '</td>
+            <td align="center" valign="bottom">' . $row['Wed'] . '</td>
+            <td align="center" valign="bottom">' . $row['Thur'] . '</td>
+            <td align="center" valign="bottom">' . $row['Fri'] . '</td>
+            <td align="center" valign="bottom">' . $row['Sat'] . '</td>
+            <td align="center" valign="bottom">' . $row['Sun'] . '</td>
+            </tr>'; 
+        }
 
     echo '</tbody>
         </table>';

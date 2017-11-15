@@ -11,7 +11,7 @@
 
 <?php
     $page_title = "Clubs and Events Home";
-    $css_path = "../css/style.css";
+    $css_path = "css/style.css";
     include("../php/inc.header.php");
 ?>
     
