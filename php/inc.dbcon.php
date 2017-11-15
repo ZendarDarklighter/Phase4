@@ -14,8 +14,11 @@ catch(PDOException $e){
 }
 
 function tablePrint($course){
+    echo '<script>console.log("' . $course . '")</script>';
     global $conn;
-    $result = $conn->query("SELECT * FROM courses");
+    $result = $conn->prepare("SELECT * FROM courses WHERE Dep = ':course'");
+    $result->bindParam(':course', $course);
+    $result->execute();
     echo '<script>console.log("start of printing table for ' . $course . '");</script>';
     echo '<table class="basic" summary="Tutoring Hours">
         <tbody>
