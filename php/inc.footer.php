@@ -9,7 +9,7 @@
 -->
 
 
-
+</main>
         <footer id="footer">
             <?php echo "$copyright_year $copyright_text";?>
         <footer>

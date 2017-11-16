@@ -72,14 +72,14 @@
             </li>
             <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Student Resources</a>
                 <div class="dropdown-content">
-                    <a href="Home-SR.html">Resources Home</a>
-                    <a href="Tut_Home.html">Tutoring</a>
-                    <a href="Software.html">Software</a>
-                    <a href="Adv_Home.html">Advising</a>
-                    <a href="Course_Home.html">Course Information</a>
-                        <a href="../StudentResources/Jobs-JM.php">Job Market Info</a>
-                        <a href="../StudentResources/Jobs-IO.php">Internship Opportunities</a>
-                    </div><!-- end div class="dropdown-content" -->
+                    <a href="../stuRes/home.php">Resources Home</a>
+                    <a href="../stuRes/tutor.php?subj=null">Tutoring</a>
+                    <a href="../stuRes/software.php">Software</a>
+                    <a href="../stuRes/advisor.php">Advising</a>
+                    <a href="../stuRes/course.php">Course Information</a>
+                    <a href="../StudentResources/Jobs-JM.php">Job Market Info</a>
+                    <a href="../StudentResources/Jobs-IO.php">Internship Opportunities</a>
+                </div><!-- end div class="dropdown-content" -->
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Clubs and Events</a>
                     <div class="dropdown-content">
