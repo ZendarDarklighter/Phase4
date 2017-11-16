@@ -10,13 +10,13 @@
 -->
 <?php
     $page_title = "Clubs Home";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
     <body>
         <div id="content_wrapper">
-            <div id="sidebar"> 
+            <div id="sidebar" class="specialclubs"> 
                     <h2>Student Organizations</h2>
                     <ul class="side_menu">
                         <li><a href="clubs.php">Organizations Home</a></li>
@@ -32,7 +32,8 @@
             	<div class="post_section">
         
                      <div class="post_content">
-                         <h2>Get Invole Now! (Check Out Clubs on left)</h2>
+                         <h2 class="clubheading-lg">Get Invole Now! (Check Out Clubs on left)</h2>
+                        <h2 class="clubheading-sm">Get Invole Now! (Check Out Clubs on Top)</h2>
                          <p>1. You’ll learn more about yourself</p>
                          <p>2. You’ll develop soft skills.</p>
                          <p>3. You’ll learn how to work with a team.</p>
@@ -46,10 +47,10 @@
                          <div class="clubs-slidecont">
                             <button class="clubsbutleft"onclick="plusDivs(-1)">&#10094;</button>
                              <button class="clubsbutright" onclick="plusDivs(1)">&#10095;</button>
-                          <img class="clubslides" src="../images/studorg1.jpg" style="width:100%">
-                          <img class="clubslides" src="../images/studorg2.jpg" style="width:100%">
-                          <img class="clubslides" src="../images/studorg4.jpg" style="width:100%">
-                          <img class="clubslides" src="../images/studorg5.jpg" style="width:100%">
+                          <img class="clubslides" src="../images/studorg1.jpg">
+                          <img class="clubslides" src="../images/studorg2.jpg">
+                          <img class="clubslides" src="../images/studorg4.jpg">
+                          <img class="clubslides" src="../images/studorg5.jpg">
                           
                           
                         </div>
@@ -78,7 +79,6 @@
  
         </div>
         </div>
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";

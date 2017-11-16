@@ -11,7 +11,7 @@
 
 <?php
     $page_title = "Clubs and Events Home";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
@@ -20,9 +20,9 @@
             <div id="sidebar"> 
                     <h2>Clubs and Events</h2>
                     <ul class="side_menu">
-                        <li><a href="Home_CE.php">Clubs and Events Home</a></li>
-                        <li><a href="seminar.php">Seminars</a></li>
-                        <li><a href="clubs.php">Student Organiztions</a></li>           
+                        <li><a href="../clubs/Home_CE.php">Clubs and Events Home</a></li>
+                        <li><a href="../clubs/seminar.php">Seminars</a></li>
+                        <li><a href="../clubs/clubs.php">Student Organiztions</a></li>           
                     </ul>
             </div>
             
@@ -140,7 +140,7 @@
                          </div>
                          <div id="rightcal">
                              <h2>All Events are held in MUC-Ballroom</h2>
-                             <img src="../images/bioevent.png">
+                             <img src="../images/bioevent.png" class="ce-image">
                          </div>
                          
                              
@@ -150,7 +150,6 @@
  
         </div>
         </div>
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";

@@ -78,7 +78,7 @@ function test_input($data) {
 ?>
 <?php
     $page_title = "Contact Us";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
@@ -137,9 +137,10 @@ function test_input($data) {
                               <tr class="head">
                                 <th style="width:20%;"><strong>Name</strong></th>
                                   <th style="width:20%;"><strong>Position</strong></th>
-                                  <th style="width:10%;"><strong>Office</strong></th>
-                                  <th style="width:15%;"><strong>Phone</strong></th>
-                                  <th style="width:15%;"><strong>Fax</strong></th>
+                                  <th style="width:10%;" class="contact-low"><strong>Office</strong></th>
+                                  <th style="width:15%;" class="contact-hide">
+                                      <strong>Phone</strong></th>
+                                  <th style="width:15%;" class="contact-hide"><strong>Fax</strong></th>
                                   <th style="width:20%;"><strong>Email</strong></th>
                               </tr>
                             
@@ -147,9 +148,9 @@ function test_input($data) {
                                 <tr>
                                   <td><p><?php echo $row['name'];?></p></td>
                                     <td><p><?php echo $row['position'];?></p></td>
-                                    <td><p><?php echo $row['office'];?></p></td>
-                                    <td><p><?php echo $row['phone'];?></p></td>
-                                    <td><p><?php echo $row['fax'];?></p></td>
+                                    <td class="contact-low"><p><?php echo $row['office'];?></p></td>
+                                    <td class="contact-hide"><p><?php echo $row['phone'];?></p></td>
+                                    <td class="contact-hide"><p><?php echo $row['fax'];?></p></td>
                                     <td><p><?php echo $row['email'];?></p></td>
                                   </tr>
                                 
@@ -162,7 +163,6 @@ function test_input($data) {
  
         </div>
         </div>
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";

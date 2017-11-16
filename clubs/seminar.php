@@ -25,7 +25,7 @@
 ?>
 <?php
     $page_title = "Seminars";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
@@ -34,9 +34,9 @@
             <div id="sidebar"> 
                     <h2>Clubs and Events</h2>
                     <ul class="side_menu">
-                        <li><a href="Home-CE.php">Clubs and Events Home</a></li>
-                        <li><a href="seminar.php">Seminars</a></li>
-                        <li><a href="clubs.php">Student Organizations</a></li>           
+                        <li><a href="../clubs/Home_CE.php">Clubs and Events Home</a></li>
+                        <li><a href="../clubs/seminar.php">Seminars</a></li>
+                        <li><a href="../clubs/clubs.php">Student Organiztions</a></li>           
                     </ul>
             </div>
             
@@ -58,7 +58,7 @@
                                 <th class="w-10">Date</th>
                                 <th class="w-20">Speaker</th>
                                 <th class="w-20">Institution</th>
-                                <th class="w-50">Title or Topic</th>
+                                <th class="w-50 seminar-hide">Title or Topic</th>
                               </tr>
                             
                                 <?php while($row = mysqli_fetch_array($search_result)):?>
@@ -66,7 +66,7 @@
                                   <td><p><?php echo $row['date'];?></p>
                                  </td><td><p><?php echo $row['speaker'];?></p>
                                  </td><td><p><?php echo $row['institution'];?></p>
-                                 </td><td><p><?php echo $row['title'];?></p>
+                                 </td><td class="seminar-hide"><p><?php echo $row['title'];?></p>
                                  </td>
                                   </tr>
                                 
@@ -78,8 +78,8 @@
             </div>
         	<div class="cleaner"></div>
         </div>
+        </div>
 
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";

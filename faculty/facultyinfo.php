@@ -30,7 +30,7 @@
 ?>
 <?php
     $page_title = "Faculty Information";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
@@ -39,7 +39,7 @@
             <div id="sidebar"> 
                     <h2>Meet our People</h2>
                     <ul class="side_menu">
-                        <li><a href="faculty.php">Faculty</a></li>
+                        <li><a href="../faculty/faculty.php">Faculty</a></li>
                     </ul>
             </div>
             
@@ -50,14 +50,16 @@
                      <div class="post_content">
                         <?php while($row = mysqli_fetch_array($search_result)):?>
                          <h2><?php echo $row['name'];?></h2>
-                         <div style="width:20%; height:200px; float:left">
+                         <div>
+                         <div class="facultyinfoleft">
                              <img src="<?php echo $row['imagelink'];?>"></div>       
-                         <div style="width:80%; height:200px; float:right">               
+                         <div class="facultyinforight">
                              <h3><?php echo $row['status'];?></h3>
                              <p><?php echo $row['education'];?></p>
                              <p><strong>Office: </strong><?php echo $row['office'];?></p>
                              <p><strong>Phone: </strong><?php echo $row['phone'];?></p>
                              <p><strong>Email: </strong><a href="mailto:<?php echo $row['email'];?>"><?php echo $row['email'];?></a></p>
+                         </div>
                          </div>
                          <p><strong>Research Lab: </strong><?php echo $row['researchlab'];?></p>
                          <p><strong>Web: </strong><a href="<?php echo $row['web'];?>" target="_blank"><?php echo $row['web'];?></a></p><br>
@@ -77,7 +79,6 @@
  
         </div>
         </div>
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";

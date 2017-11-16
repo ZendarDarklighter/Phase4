@@ -17,7 +17,7 @@
     <link href = "<?php echo $css_path ?>" rel="stylesheet" type="text/css" />
       <div id="header">
         <div id="site_title">
-            <img class="imgslider" src="../images/biosci.png" alt="Biological Sciences" style="width:100%">
+            <img src="../images/biosci.png" alt="Biological Sciences">
         </div><!-- end div id="site_title" -->
         <div class="slidemove">
             <img class="slider" src="../images/collacting.jpg" style="width:100%">
@@ -28,10 +28,12 @@
             <img class="slider" src="../images/theguy.jpg" style="width:100%">
             <img class="slider" src="../images/thelady.jpg" style="width:100%">
             <img class="slider" src="../images/verybig.jpg" style="width:100%">
-        </div>
+        </div> <!--end div class="slidemove" -->
+
         <script> 
             var myIndex = 0;
             carousel();
+
             function carousel() {
                 var i;
                 var x = document.getElementsByClassName("slider");
@@ -73,26 +75,26 @@
                         <a href="Software.html">Software</a>
                         <a href="Adv_Home.html">Advising</a>
                         <a href="Course_Home.html">Course Information</a>
-                        <a href="Jobs-JM.html">Job Market Info</a>
-                        <a href="Jobs-IO.html">Internship Opportunities</a>
+                        <a href="../StudentResources/Jobs-JM.php">Job Market Info</a>
+                        <a href="../StudentResources/Jobs-IO.php">Internship Opportunities</a>
                     </div><!-- end div class="dropdown-content" -->
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Clubs and Events</a>
                     <div class="dropdown-content">
-                        <a href="Home-CE.html">Clubs and Events Home</a>
-                        <a href="Seminars.html">Seminars</a>
-                        <a href="Stud_Org_Home.html">Student Organizations</a>
+                        <a href="../clubs/Home_CE.php">Clubs and Events Home</a>
+                        <a href="../clubs/seminar.php">Seminars</a>
+                        <a href="../clubs/clubs.php">Student Organizations</a>
                     </div><!-- end div class="dropdown-content" -->
                 </li>
                 <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Facilities</a>
                     <div class="dropdown-content">
-                        <a href="Home-Faci.html">Facilities Home</a>
-                        <a href="Facilities-L.html">Laboratory Information</a>
-                        <a href="Facilities-T.html">Take a Tour</a>
+                        <a href="../Facilities/Home-Faci.php">Facilities Home</a>
+                        <a href="../Facilities/Facilities-L.php">Laboratory Information</a>
+                        <a href="../Facilities/Facilities-T.php">Take a Tour</a>
                     </div><!-- end div class="dropdown-content" -->
                 </li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="../faculty/faculty.php">Faculty</a></li>
+                <li><a href="../base/contactus.php">Contact Us</a></li>
             </ul>  
         </div><!--end div id="menu" -->
   </head>

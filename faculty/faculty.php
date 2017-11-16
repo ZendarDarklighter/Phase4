@@ -18,17 +18,13 @@
         {
             die('can not connect to server');
         }
-        
-        $faculty = mysqli_query($conn, $query);
-        
+        $faculty = mysqli_query($conn, $query);   
         return $faculty;
     }
-
-
 ?>
 <?php
     $page_title = "Faculty Home";
-    $css_path = "../css/style.css";
+    $css_path = "../css/styleVaibhav.css";
     include("../php/inc.header.php");
 ?>
     
@@ -37,7 +33,7 @@
             <div id="sidebar"> 
                     <h2>Meet our People</h2>
                     <ul class="side_menu">
-                        <li><a href="faculty.php">Faculty</a></li>
+                        <li><a href="../faculty/faculty.php">Faculty</a></li>
                     </ul>
             </div>
             
@@ -51,9 +47,9 @@
 
                             <table id="facultyTable">
                               <tr class="head">
-                                <th style="width:30%;">Picture</th>
-                                <th style="width:30%;">Name and Information</th>
-                                <th style="width:40%;">Interests</th> 
+                                <th class="ft-30">Picture</th>
+                                <th class="ft-30">Name and Information</th>
+                                <th class="ft-40 fac-hide">Interests</th> 
                               </tr>
                             
                               <?php while($row = mysqli_fetch_array($search_result)):?>
@@ -64,7 +60,7 @@
                                      <p><?php echo $row['office'];?></p>
                                      <p><?php echo $row['phone'];?></p>
                                      <p><a href="mailto:<?php echo $row['email'];?>"><?php echo $row['email'];?></a></p></td>
-                                  <td><p><?php echo $row['interest'];?></p></td>
+                                  <td class="fac-hide"><p><?php echo $row['interest'];?></p></td>
                              </tr>
                                 
                              <?php endwhile; ?>
@@ -75,7 +71,6 @@
  
         </div>
         </div>
-        </body>
 <?php
     $copyright_year = "2017";
     $copyright_text = "Vaibhav Patel Team Bugs CS-321 phase 4 All rights reserved";
