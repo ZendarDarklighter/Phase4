@@ -1,7 +1,7 @@
 <?php
-    $page_title = "Student Resource Home";
+    $page_title = "Course Page";
     $css_path = "../../Phase4/css/styleJ.css";
-    $main_id = "stres_home";
+    $main_id = "course";
     include('../php/inc.header.php');
     include('../php/inc.dbcon.php');
 ?>
@@ -9,14 +9,12 @@
 <body>
 <div id="stres_info">
     <div id="sidebar">
-         <script>sideBarLoad("Student Resorces","home.php","Resources Home","tutor.php?subj=null","Tutoring","software.php","Software","advisor.php","Advising","course.php","Course Information","","Job Market Info","","Internship Opportunities");</script>
+         <script>sideBarLoad("Student Resorces","home.php","Resources Home","tutor.php?subj=null","Tutoring","software.php","Software","advisor.php","Advising","course.php","Course Information","../StudentResources/Jobs-JM.php","Job Market Info","../StudentResources/Jobs-IO.php","Internship Opportunities");</script>
     </div>
     <div id="center">
         <h2>List of Courses:</h2>
         <div class='tool'>
-            <p>Search Tool: </p>
             <form>
-                <input type='text' name="search" placeholder=<?php if(isset($_GET['search'])){ echo $_GET['search']; } else{ echo 'Search...'; } ?>>
                 <p>Choose Category:</p>
                     <select onchange="location = this.value;">
                     <option value="course.php" <?php if(!isset($_GET['subj']) || ($_GET['subj'] == "")){ echo 'selected';} else { echo ''; }?> >All Courses</option>

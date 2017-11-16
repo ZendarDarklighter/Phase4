@@ -4,7 +4,7 @@ $user = "root";
 $pass = "";
 $conn;
 try{
-    $conn = new PDO("mysql:host=$sevad;dbname=cs321", $user, $pass);
+    $conn = new PDO("mysql:host=$sevad;dbname=teambugsphase4", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     echo "<script>console.log('database connected');</script>";

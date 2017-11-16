@@ -1,7 +1,7 @@
 <?php
-    $page_title = "Student Resource Home";
+    $page_title = "Software";
     $css_path = "../../Phase4/css/styleJ.css";
-    $main_id = "stres_home";
+    $main_id = "soft";
     include('../php/inc.header.php');
     include('../php/inc.dbcon.php');
 ?>

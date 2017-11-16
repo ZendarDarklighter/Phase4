@@ -205,6 +205,167 @@ INSERT INTO `seminars` (`id`, `date`, `speaker`, `institution`, `title`) VALUES
 (8, 'Nov 6', 'Alexis Hill', 'Washington University in St. Louis', 'Impact of Drosophila DEG/ENaC channels on neurotransmission and behavior'),
 (9, 'Nov 13', 'Vance McCracken', 'Southern Illinois University Edwardsville', 'Effects of berberine on microbial bile acid metabolism');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `course`
+--
+
+CREATE TABLE `course` (
+  `Dep_Id` int(11) DEFAULT NULL,
+  `Num` varchar(128) NOT NULL,
+  `Name` varchar(128) NOT NULL,
+  `Description` text NOT NULL,
+  `Credits` int(11) DEFAULT NULL,
+  `Attr` text,
+  `Professor` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`Dep_Id`, `Num`, `Name`, `Description`, `Credits`, `Attr`, `Professor`) VALUES
+(1, '150', 'Biology I', 'First of a two-course sequence, introduction to biochemistry, molecular genetics, cell structure and function, and evolution. Lab required.', 4, 'Breadth-Life Sciences, Experiences-Laboratory, Intro Natural Sciences & Math, Science Lab Course', 'Christopher Theodorakis,	Kelly Barry, Christine Simmons,	Elizabeth Esselman'),
+(1, '151', 'Biology II', 'Second of a two-course sequence, introduction to biochemistry, molecular genetics, cell structure and function, and evolution. Lab required.', '4', 'Breadth-Life Sciences, Experiences-Laboratory, Intro Natural Sciences & Math, Science Lab Course', 'Christopher Theodorakis,	Kelly Barry, Christine Simmons,	Elizabeth Esselman'),
+(1, '220', 'Genetics', 'Introduction to transmission, molecular and population genetics with applications to all organisms. Lab required. ', '', '', ''),
+(1, '319', 'Cell and Molecular Biology', 'Basic biological chemistry as related to cellular function. Introduction to the structure and function of macromolecule. Differentiation between eukaryotes and prokaryotes. Three lectures and one lab per week.', '', '', ''),
+(1, '350', 'Microbiology', 'Structure, metabolism, and genetics of bacteria and bacteriophages. Role of bacteria in disease, biotechnology, and the environment.', '', '', ''),
+(2, '121A', 'General Chemistry I', 'University-level modern chemistry for science students, atomic structure, molecular bonding, structure, stoichiometry, chemical change, equilibrium, qualitative analysis. Four lecture hours per week. Must be taken in sequence.', '', '', ''),
+(2, '121B', 'General Chemistry II', 'University-level modern chemistry for science students, atomic structure, molecular bonding, structure, stoichiometry, chemical change, equilibrium, qualitative analysis. Four lecture hours per week. Must be taken in sequence.', '', '', ''),
+(2, '125A', 'General Chemistry Lab I', 'Laboratory safety practices, techniques, qualitative and quantitative analysis, chemical change and equilibria. One three-hour laboratory per week.', '', '', ''),
+(2, '125B', 'General Chemistry Lab II', 'Laboratory safety practices, techniques, qualitative and quantitative analysis, chemical change and equilibria. One three-hour laboratory per week.', '', '', ''),
+(2, '241A', 'Organic Chemistry I', 'Structural types of organic compounds correlated with chemical and physical properties. Bonding, reaction dynamics, reaction types, stereochemistry, functional groups, spectroscopic methods. Three lecture hours per week. ', '', '', ''),
+(4, '131/131L', 'College Physics I', 'This course is the first semester of a two semester sequence. Designed to meet pre-medical and biological science requirements. Topics include mechanics, fluids, energy and heat and gravitation.', '', '', ''),
+(3, '107', 'Concepts of Stats', 'Basic concepts of descriptive statistics; probability distribution and inferential statistics (estimating parameters and testing hypotheses); sampling, experimental design, correlation and regression, consumer price index. Credit may not be granted for both 107 and 244.', '', '', ''),
+(3, '244', 'Statistics', 'Summarizing data, including distributions, change and growth, relationships. Basics of survey design and experimental design. Inferential statistics, including confidence intervals and hypothesis testing. Credit may not be granted for both 107 and 244.', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `departments`
+--
+
+CREATE TABLE `departments` (
+  `Dep_Id` int(11) NOT NULL,
+  `Department` varchar(6) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `departments`
+--
+
+INSERT INTO `departments` (`Dep_Id`, `Department`) VALUES
+(1, 'BIOL'),
+(2, 'CHEM'),
+(4, 'PHY'),
+(3, 'STAT');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `software`
+--
+
+CREATE TABLE `software` (
+  `Name` varchar(32) NOT NULL,
+  `file` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `descr` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `software`
+--
+
+INSERT INTO `software` (`Name`, `file`, `img`, `descr`) VALUES
+('COMPAS', 'download/compas.zip', 'compas.jpg', '<p>COMPAS (Community Pattern Simulator)&#160;is a program that generates simulated community data based on explicit models of how species respond to environmental gradients. Simulated data of this type are useful to evaluate methods for community analysis (e.g., ordination and clustering) because the underlying gradient structure is known and can be used to specify quantitative measures of success. COMPAS has been gradually developed by Dr. Peter Minchin since the early 1980s. It was originally designed to run on mainframe systems and later adapted for personal computers. The program is not a Windows application but runs on any Windows-based PC in a command window. In the interest of stimulating research on community analysis methods, COMPAS is distributed free of charge&#160;with the expectation that any publications arising from its use will include an acknowledgement to Dr. Peter Minchin for use of the software and also cite the following paper, in which the simulation procedure implemented in COMPAS was first described:</p>\r\n                         <p>Minchin, P.R. (1987). Simulation of multidimensional community patterns: towards a comprehensive model. Plant Ecology&#160;71: 145-156.</p>\r\n                         <p>COMPAS is distributed with no warranty and use of the software is totally at the user\'s own risk.</p>\r\n'),
+('DECODA', NULL, 'decoda.gif', '<p>DECODA (Database for Ecological Community Data) is a program written by Dr. Peter Minchin for the handling and analysis of the kinds of data often&#160;collected by community ecologists. It is both a database system and a platform for data analysis by a set of methods that were not readily available in other software when DECODA was developed. These include ordination by various forms of multidimensional scaling and vector fitting, a method for interpretation of ordinations by fitting vectors of maximum correlation with explanatory variables. DECODA includes several options for capturing data from other file types and can extract data from its databases in formats suitable for input to many other popular data analysis programs (e.g., PC-ORD, CANOCO, and Primer).</p>\r\n                        <p>DECODA was originally created as a personal research tool and by modern standards it is not very user-friendly. Like COMPAS, it is not a Windows application but runs on any Windows-based PC in a command window. DECODA is NOT in the public domain and its use is subject to a license agreement. If you are interested in obtaining a copy of DECODA, please contact <a href=\"mailto:pminchi@siue.edu\">Dr. Peter Minchin</a>. A windows application with the functionality of DECODA (and many additional capabilities) is under development but progress is slow due to other commitments and a&#160;probable release date is not yet available.</p>\r\n'),
+('VEGAN', '\"http://cc.oulu.fi/&#126;jarioksa/softhelp/vegan.html\" target=\"_blank', 'vegan.png', '<p>Vegan is a package in R, which is a free, open source statistical environment. The vegan package is intended to help vegetation ecologists and other community ecologists to use R. It contains all major ordination methods, ecologically meaningful dissimilarity indices, tools&#160;for analysis of diversity, species richness, and abundance models, plus numerous support functions.</p>\r\n                        <p>The main author and developer of vegan is Dr. Jari Oksanen at the University of Oulu, Finland&#160;and several collaborators have contributed code for various procedures and methods. The code for multidimensional scaling (implemented in vegan as monoMDS) was contributed by Dr. Peter Minchin and is essentially the same as the code used in DECODA.</p>\r\n                        <p>If you are interested in obtaining vegan, <a href=\"http://cc.oulu.fi/&#126;jarioksa/softhelp/vegan.html\" target=\"_blank\">click here</a> to visit Dr. Jari Oksanen\'s web page on vegan.</p>\r\n');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tut_sched`
+--
+
+CREATE TABLE `tut_sched` (
+  `Dep` varchar(6) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Mon` varchar(255) DEFAULT '-',
+  `Tue` varchar(255) DEFAULT '-',
+  `Wed` varchar(255) DEFAULT '-',
+  `Thur` varchar(255) DEFAULT '-',
+  `Fri` varchar(255) DEFAULT '-',
+  `Sat` varchar(255) DEFAULT '-',
+  `Sun` varchar(255) DEFAULT '-'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tut_sched`
+--
+
+INSERT INTO `tut_sched` (`Dep`, `Name`, `Mon`, `Tue`, `Wed`, `Thur`, `Fri`, `Sat`, `Sun`) VALUES
+('BIOL', '111', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('BIOL', '140', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('BIOL', '150', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', ''),
+('BIOL', '151', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', ''),
+('BIOL', '220', '12:00 - 7:00', '9:00 - 2:00 4:00 - 6:00', '12:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('BIOL', '240A', '9:00 - 5:00', '12:00 - 2:00 3:00 - 6:00', '9:00 - 3:00 3:30 - 7:00', '8:00 - 7:00', '8:00 - 1:00', '9:00 - 12:00', '4:00 - 7:00'),
+('BIOL', '240B', '3:00 - 5:00', '3:00 - 5:00', '3:30 - 7:00', '2:00 - 7:00', '9:00 - 12:00', '-', '-'),
+('BIOL', '250', '', '', '', '2:00 - 5:00', '9;00 - 12:00', '', '4:00 - 7:00'),
+('MATH', '112', '', '9:00 - 12:00', '', '9:00 - 12:00', '12:00 - 2:00', '', ''),
+('MATH', '120', '9:00 - 7:00', '9:00 - 7:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('MATH', '125', '9:00 - 7:00', '9:00 - 7:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('MATH', '145', '9:00 - 7:00', '9:00 - 7:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('MATH', '150', '9:00 - 7:00', '9:00 - 7:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('CHEM', '112', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('CHEM', '113', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', '4:00 - 7:00'),
+('CHEM', '121', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', ''),
+('CHEM', '131', '2:00 - 5:00', '9:00 - 12:00', '2:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('CHEM', '241A', '9:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '9:00 - 7:00', '8:00 - 7:00', '8:00 - 3:00', '9:00 - 12:00', ''),
+('CHEM', '241B', '12:00 - 7:00', '9:00 - 2:00 3:00 - 6:00', '12:00 - 7:00', '10:00 - 7:00', '12:00 - 3:00', '', ''),
+('PHYS', '113', '1:00 - 5:00', '9:00 - 12:00', '1:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('PHYS', '131', '1:00 - 5:00', '9:00 - 12:00', '1:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('PHYS', '132', '1:00 - 5:00', '9:00 - 12:00', '1:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('PHYS', '151', '1:00 - 5:00', '9:00 - 12:00', '1:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', ''),
+('PHYS', '152', '1:00 - 5:00', '9:00 - 12:00', '1:00 - 4:00', '10:00 - 3:30', '12:00 - 3:00', '', '');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `course`
+--
+ALTER TABLE `course`
+  ADD UNIQUE KEY `Name` (`Name`),
+  ADD KEY `Dep_Id` (`Dep_Id`);
+
+--
+-- Indexes for table `departments`
+--
+ALTER TABLE `departments`
+  ADD PRIMARY KEY (`Dep_Id`),
+  ADD UNIQUE KEY `Department` (`Department`);
+
+--
+-- Indexes for table `software`
+--
+ALTER TABLE `software`
+  ADD PRIMARY KEY (`Name`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `course`
+--
+ALTER TABLE `course`
+  ADD CONSTRAINT `course_ibfk_1` FOREIGN KEY (`Dep_Id`) REFERENCES `departments` (`Dep_Id`);
+COMMIT;
+
 --
 -- Indexes for dumped tables
 --
