@@ -1,12 +1,12 @@
 <!-- 
     
     File: inc.header.php
-    Author: written by team Bugs pre phase 4 get team member name
+    Author: Carl Grissom and Team Bugs
     Team: Bugs
     Date: 10/31/2017
     CS-321 pahse 4
 
-    Description: Header file for graduate student pages
+    Description: Header file for pages done by Carl Grissom
                  
 -->
 <!DOCTYPE html>
@@ -16,44 +16,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="<?php echo $css_path; ?>" rel="stylesheet">  
+        <script src="/phase4/js/common.js"></script>
     </head>
 <body>
     <header>
 
-    <div id="site_title" class="col-3">
-            <img src="/phase4/images/biosci.png" alt="Biological Sciences">
+    <div id="site_title" >
+            <img class="tablet_only" src="/phase4/images/headers/header2.jpg" alt="biological Sciences">
+            <img class="no_tablet" src="/phase4/images/headers/biosci.png" alt="Biological Sciences">
     </div><!-- end div id="site_title" -->
     
-    <div class="slidemove col-7 no_mobile tablet">
-            <img class="slider" src="/phase4/images/collacting.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/experiment.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/frog.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/microscope.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/thegroup.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/theguy.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/thelady.jpg" style="width:100%">
-            <img class="slider" src="/phase4/images/verybig.jpg" style="width:100%">
+    <div class="slidemove desktop_only">
+            <img class="slider" src="/phase4/images/slideshow/collacting.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/experiment.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/frog.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/microscope.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/thegroup.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/theguy.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/thelady.jpg" style="width:100%">
+            <img class="slider" src="/phase4/images/slideshow/verybig.jpg" style="width:100%">
+        <script>
+            var myIndex = 0;   
+            carousel();
+        </script>
     </div> <!--end div class="slidemove" -->
 
-    <div id="menu" class="col-10  no_mobile">
+    <div id="menu" class="col-10 desktop_only">
         <ul>
-            <li><a href="Home.html"> Home </a></li>
+            <li><a href="/phase4/home.php"> Home </a></li>
             <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Undergraduate</a>
                 <div class="dropdown-content">
-                    <a href="Home-UG.html">Undergrad Home</a>
-                    <a href="#">Ecology, Evolution, and Environment</a>
-                    <a href="Undergrad-major.html">Genetics and Cellular Biology</a>
-                    <a href="#">Integrative Biology</a>
-                    <a href="#">Medical Sciences</a>
-                    <a href="#">Medical Technology</a>
-                    <a href="#">Biology Minor</a>
+                    <a href="/phase4/undergrad/undergrad_home.php">Undergrad Home</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=ecology">Ecology, Evolution, and Environment</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=genetics">Genetics and Cellular Biology</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=integrative">Integrative Biology</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=medical">Medical Sciences</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=technology">Medical Technology</a>
+                    <a href="/phase4/undergrad/undergrad_content.php?page=minor">Biology Minor</a>
                 </div><!-- end div class="dropdown-content" -->
             </li>
             <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Graduate</a>
                 <div class="dropdown-content">
-                    <a href="Home-G.html">Grad Home</a>
-                    <a href="Grad_Admin.html">Admissions</a>
-                    <a href="Re_Topic.html">Research Topics</a>
+                    <a href="/phase4/grad/grad_home.php">Grad Home</a>
+                    <a href="/phase4/grad/admisson.php">Admissions</a>
+                    <a href="/phase4/grad/research_topics.php.html">Research Topics</a>
                 </div><!-- end div class="dropdown-content" -->
             </li>
             <li class="dropdown"><a href="javascript:void(0)" class = "dropbtn"> Student Resources</a>
@@ -88,9 +94,9 @@
 
     <div class="sidebar block card leftanim no_desktop" id="mySidebar">
     <button class="baritem button large" onclick="w3_close()">Close &times;</button>
-        <a href="#" class="baritem button">Home</a>
-        <a href="#" class="baritem button">Undergraduate</a>
-        <a href="#" class="baritem button">Graduates</a>
+        <a href="home.php" class="baritem button">Home</a>
+        <a href="undergrad_home.php" class="baritem button">Undergraduate</a>
+        <a href="grad_home.php" class="baritem button">Graduates</a>
         <a href="#" class="baritem button">Student Resources</a>
         <a href="Calender.html" class="baritem button">Clubs and Events</a>
         <a href="#" class="baritem button">Facilities</a>
@@ -103,49 +109,6 @@
             &#9776;
         </button>
     </div>
-
-<script>
-
-    function w3_open() {
-    document.getElementById("main").style.marginLeft = "50%";
-    document.getElementById("mySidebar").style.width = "50%";
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("openNav").style.display = 'none';
-    }
-    function w3_close() {
-    document.getElementById("main").style.marginLeft = "0%";
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("openNav").style.display = "inline-block";
-    }
-        
-    function myAccFunc() {
-        var x = document.getElementById("demoAcc");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-green";
-        } else { 
-            x.className = x.className.replace(" w3-show", "");
-            x.previousElementSibling.className = 
-            x.previousElementSibling.className.replace(" w3-green", "");
-        }
-    }
-
-    var myIndex = 0;   
-    carousel();
-                
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("slider");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 2500);    
-        }
-      
-</script>
       
 </header>
     <main id="<?php echo $main_id; ?>">

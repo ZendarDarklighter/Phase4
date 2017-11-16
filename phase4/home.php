@@ -9,25 +9,14 @@
     Description: home page for biological sciences.
                  
 -->
-<?php
-$query = sprintf("SELECT content FROM textdump WHERE pagename='home'");
-$search_result = get_content($query);
-function get_content($query){
-    $conn = mysqli_connect("localhost", "carl", "1234", "phase4");
-    if(!$conn){
-        die("what the flip");
-    }
-    $content = mysqli_query($conn, $query);
-    return $content;
-}
-?>
+
 <?php
 $page_title = "Biological Sciences Home";
-$css_path = "css/style.css";
+$css_path = "/phase4/css/style.css";
 $main_id = "main";
 
-include('php/test.php');
-
+include('php/inc.header.php');
+include('php/data.php');
 
 ?>
 
@@ -35,7 +24,7 @@ include('php/test.php');
     <div id="sidebar" class="no_mobile col-2"> 
         <h2>Most Visited Links</h2>
         <ul class="side_menu">
-            <li><a href="Course_Home.html">Course Home Page</a></li>
+            <li><a href="home.php">Course Home Page</a></li>
                 <li><a href="Tut_Home.html">Tutoring</a></li>
                 <li><a href="Jobs-IO.html">Internships</a></li>
                 <li><a href="Adv_Home.html">Advising</a></li>
@@ -47,7 +36,7 @@ include('php/test.php');
     
         <div class="post_section">
             <div class="post_content">
-            <h3>Biological Sciences at SIUE</h3>
+            <h2>Biological Sciences at SIUE</h2>
                 <div style="float: right;">
                     <a href="https://www.facebook.com/pages/SIUE-Biological-Sciences/303941963141257" target="_blank"><img alt="Facebook logo" height="27" src="images/facebook_logoS.png" width="27" /> <strong>Follow us on Facebook</strong></a>     
                 </div>
@@ -57,9 +46,16 @@ include('php/test.php');
                     </iframe>
                 </div>
 <br/><br/><br/>
-    <?php while($row = mysqli_fetch_array($search_result)):?>
-    <p><?php echo $row['content'];?></p>
-<?php endwhile; ?>
+
+        <?php
+        # load text content into page
+            $page = 'home';
+
+            get_text_dump($page);
+
+            display_content($content);
+        ?>
+
     </div>
 </div>
 <div class="cleaner col-10"></div>
