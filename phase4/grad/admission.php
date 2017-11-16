@@ -13,6 +13,7 @@
 <?php
 $page_title = "Graduates Admissions";
 $css_path = "/phase4/css/style.css";
+
 $main_id = "main";
 
 include('../php/inc.header.php');
@@ -34,10 +35,13 @@ include('../php/data.php');
 
 
         <?php
+            
+            get_admission();
 
-        
+            display_admission_content($content);
 
         ?>
+        <script> accordion();</script>
 
     </div>
 </div>

@@ -1,0 +1,222 @@
+/N	ecology	1	BIOL 150 – Biology I (BLS, EL)	4
+/N	ecology	1	CHEM 121A – General Chemistry I (BPS)	4
+/N	ecology	1	CHEM 125A – General Chemistry Lab I (EL)	1
+/N	ecology	1	ENG 101 – English Composition I	3
+/N	ecology	1	MATH 125 – Pre-Calculus Math with Trig. (QR)	3
+/N	ecology	1	Total	15
+/N	ecology	1	BIOL 151 – Biology II (BLS, EL)	4
+/N	ecology	2	CHEM 121B – General Chemistry II (BPS)	4
+/N	ecology	2	CHEM 125B – General Chemistry Lab II(EL)	1
+/N	ecology	2	ENG 102 – English Composition II	3
+/N	ecology	2	ACS 101 or 103 - Oral Expression	3
+/N	ecology	2	Total 	15
+/N	ecology	3	BIOL 220 – Genetics	4
+/N	ecology	3	CHEM 241A – Organic Chemistry I (BPS)	3
+/N	ecology	3	STAT 244 – Statistics (BICS)	4
+/N	ecology	3	RA 101 - Reasoning & Argumentation or PHIL 213	3
+/N	ecology	3	Breadth Social Sciences (BSS)	3
+/N	ecology	3	Total	17
+/N	ecology	4	BIOL 365 – Ecology (EGC, EL)	4
+/N	ecology	4	CHEM 241B – Organic Chemistry II (BPS)	3
+/N	ecology	4	CHEM 245 – Organic Chemistry Lab (EL)	2
+/N	ecology	4	QR 101, MATH 145 or MATH 150	3
+/N	ecology	4	Breadth Humanities (BHUM)	3
+/N	ecology	4	Total	15
+/N	ecology	5	BIOE MCP Elective 300-400 level	4
+/N	ecology	5	Breadth Fine & Performing Arts (BFPA)	3
+/N	ecology	5	PHYS 131/131L – College Physics I or PHYS 151 – University Physics and 151L Lab**	5
+/N	ecology	5	Health Experience (EH)	3
+/N	ecology	5	Total	15
+/N	ecology	6	BIOL 327 – Evolution	3
+/N	ecology	6	BIOL EEE 300-400 Level	3-4
+/N	ecology	6	PHYS 132/132L – College Physics II or PHYS 152 – University Physics and 152L Lab**	5
+/N	ecology	6	Elective	3
+/N	ecology	6	Total	14-15
+/N	ecology	7	BIOL 492 – Biological Sci Colloquium I	1
+/N	ecology	7	BIOL EEE Elective 400 Level	4
+/N	ecology	7	Interdisciplinary Studies (IS)	3
+/N	ecology	7	Experience United States Cultures (EUSC)	3
+/N	ecology	7	Elective	3
+/N	ecology	7	BIOL EEE Elective 400 level	3
+/N	ecology	7	Total	17
+/N	ecology	8	BIOL 492m or 497	1
+/N	ecology	8	BIOL EEE Elective 400 Level	3-4
+/N	ecology	8	BIOL Elective 300-400 Level	3-4
+/N	ecology	8	Electives	5
+/N	ecology	8	Total	12-14
+/N	genetics	1	BIOL 150 – Biology I (BLS, EL)	4
+/N	genetics	1	CHEM 121A – General Chemistry I (BPS)	4
+/N	genetics	1	CHEM 125A – General Chemistry Lab I (EL)	1
+/N	genetics	1	ENG 101 – English Composition I	3
+/N	genetics	1	MATH 145 – Calculus for Life Sciences (QR)	5
+/N	genetics	1	Total	17
+/N	genetics	2	BIOL 151 – Biology II (BLS, EL)	4
+/N	genetics	2	CHEM 121B – General Chemistry II (BPS)	4
+/N	genetics	2	CHEM 125B – General Chemistry Lab II(EL)	1
+/N	genetics	2	ENG 102 – English Composition II	3
+/N	genetics	2	ACS 101 or 103 - Oral Expression	3
+/N	genetics	2	Total	15
+/N	genetics	3	BIOL 220 – Genetics (BLS, EL)	4
+/N	genetics	3	CHEM 241A – Organic Chemistry I (BPS)	3
+/N	genetics	3	RA 101 – Reasoning & Argumentation	3
+/N	genetics	3	STAT 244 - Statistics (BICS)	4
+/N	genetics	3	Breadth Humanities (BHUM)	3
+/N	genetics	3	Total	17
+/N	genetics	5	BIOL 319 – Cell & Molecular Biology	4
+/N	genetics	5	CHEM 241B – Organic Chemistry II (BPS)	3
+/N	genetics	5	CHEM 245 – Organic Chemistry Lab (EL)	2
+/N	genetics	5	Breadth Fine & Performing Arts (BFPA)	3
+/N	genetics	5	Elective	3
+/N	genetics	5	Total	15
+/N	genetics	5	BIOL Non-GCB Elective	4
+/N	genetics	5	CHEM 351 – Biochemistry I	3
+/N	genetics	5	PHYS 131/131L – or PHYS 151, 151L	5
+/N	genetics	5	Elective	3
+/N	genetics	5	Total	15
+/N	genetics	6	CHEM 352 – Biochemistry II	3
+/N	genetics	6	PHYS 132/132L or PHYS 152, 152L	5
+/N	genetics	6	Breadth Social Science (BSS)	3
+/N	genetics	6	Elective	3
+/N	genetics	6	Total	14
+/N	genetics	7	BIOL GCB Elective 400 Level	4
+/N	genetics	7	BIOL 492 – Biological Sci Colloquium I	1
+/N	genetics	7	BIOL GCB Elective 400 Level	3
+/N	genetics	7	Interdisciplinary Studies (IS)	3
+/N	genetics	7	Health Experience (EH)	3
+/N	genetics	7	Total	14
+/N	genetics	8	BIOL GCB Elective 400 Level	3
+/N	genetics	8	BIOL 492m or 497	1
+/N	genetics	8	Experience Global Culture (EGC)	3
+/N	genetics	8	Experience United States Culture (EUSC)	3
+/N	genetics	8	Elective	3
+/N	genetics	8	Total	13
+/N	interative	1	BIOL 150 – Biology I (BLS, EL)	4
+/N	interative	1	CHEM 121A – General Chemistry I (BPS)	4
+/N	interative	1	CHEM 125A – General Chemistry Lab I (EL)	1
+/N	interative	1	ENG 101 – English Composition I	3
+/N	interative	1	MATH 125 – Pre-Calculus Trigonometry	3
+/N	interative	1	Total	15
+/N	interative	2	BIOL 151 – Biology II (BLS, EL)	4
+/N	interative	2	CHEM 121B – General Chemistry II (BPS)	4
+/N	interative	2	CHEM 125B – General Chemistry Lab II(EL)	1
+/N	interative	2	ENG 102 – English Composition II	3
+/N	interative	2	ACS 101 or 103 - Oral Expression	3
+/N	interative	2	Total	15
+/N	interative	3	BIOL 220 – Genetics	4
+/N	interative	3	CHEM 241A – Organic Chemistry I (BPS)	3
+/N	interative	3	STAT 244 – Statistics (BICS)	4
+/N	interative	3	RA 101 - Reasoning & Argumentation or PHIL 213	3
+/N	interative	3	QR 101, MATH 145 or MATH 150 (QR)	3
+/N	interative	3	Total	17
+/N	interative	5	BIOL Ecology, Evolution & Behavior Elective	3-4
+/N	interative	5	CHEM 241B – Organic Chemistry II (BPS	3
+/N	interative	5	CHEM 245 – Organic Chemistry Lab (EL)	2
+/N	interative	5	Health Experience (EH)	3
+/N	interative	5	United States Culture (EUSC)	3
+/N	interative	5	Total	14-15
+/N	interative	5	BIOL Elective	4
+/N	interative	5	PHYS 131/131L – College Physics I** or PHYS 151 – University Physics and 151L Lab	5
+/N	interative	5	Breadth Social Science (BSS)	3
+/N	interative	5	Breadth Fine & Performing Arts (BFPA)	3
+/N	interative	5	Total	15
+/N	interative	6	BIOL Biological Diversity Elective	3-4
+/N	interative	6	BIOL Morphology, Physiology & Development Elective	3-4
+/N	interative	6	PHYS 132/132L – College Physics II** or PHYS 152 University Physics II and 152L Lab	5
+/N	interative	6	Breadth Humanities (BHUM)	3
+/N	interative	6	Total	14-16
+/N	interative	7	BIOL 492	1
+/N	interative	7	BIOL Elective 400 Level	3
+/N	interative	7	BIOL Cellular & Molecular Biology Elective	3-4
+/N	interative	7	Interdisciplinary Studies (IS)	3
+/N	interative	7	Global Cultures (EGC)	3
+/N	interative	7	Elective	3
+/N	interative	7	Total	16-17
+/N	interative	8	BIOL 492m or 497	1
+/N	interative	8	BIOL Elective 400 Level	3
+/N	interative	8	BIOL Elective	3
+/N	interative	8	Elective	3
+/N	interative	8	Elective	4
+/N	interative	8	Total	14
+/N	medical	1	BIOL 150 – Biology I (BLS, EL)	4
+/N	medical	1	CHEM 121A – General Chemistry I (BPS)	4
+/N	medical	1	CHEM 125A – General Chemistry Lab I (EL)	1
+/N	medical	1	ENG 101 – English Composition I	3
+/N	medical	1	MATH 145 – Calculus for the Life Sciences or MATH 150 Calculus I (FQR)	5
+/N	medical	1	Total	17
+/N	medical	2	BIOL 151 – Biology II (BLS, EL)	4
+/N	medical	2	CHEM 121B – General Chemistry II (BPS)	4
+/N	medical	2	CHEM 125B – General Chemistry Lab II(EL)	1
+/N	medical	2	ENG 102 – English Composition II	3
+/N	medical	2	ACS 101 or 103 - Oral Expression	3
+/N	medical	2	Total	15
+/N	medical	2	BIOL 220 – Genetics	4
+/N	medical	3	CHEM 241A – Organic Chemistry I (EL)	3
+/N	medical	3	RA 101 – Reasoning & Argumentation or PHIL 213	3
+/N	medical	3	STAT 244 - Statistics (BICS)	4
+/N	medical	3	Humanities Breadth (BHUM)	3
+/N	medical	3	Total	17
+/N	medical	4	BIOL 319 – Cell & Molecular Biology	4
+/N	medical	4	CHEM 241B – Organic Chemistry II (BPS)	3
+/N	medical	4	CHEM 245 – Organic Chemistry Lab (EL)	2
+/N	medical	4	PHYS 131/131L or PHYS 151, 151L	5
+/N	medical	4	Total	14
+/N	medical	5	PHYS 132/132L or PHYS 152, 152L	5
+/N	medical	5	Breadth Social Science (BSS)	3
+/N	medical	5	BIOL Elective	3
+/N	medical	5	Breadth Fine & Performing Arts (BFPA)	3
+/N	medical	5	Total	14
+/N	medical	6	BIOL 340 – Physiology	4
+/N	medical	6	BIOL Elective (300-400 Level)	3-4
+/N	medical	6	Elective	3
+/N	medical	6	Experience Global Cultures (EGC)	3
+/N	medical	6	Health Experience (EH)	3
+/N	medical	6	Total	16-17
+/N	medical	7	BIOL 492	1
+/N	medical	7	BIOL Elective (400 Level)	4
+/N	medical	7	CHEM 351 – Biochemistry I	3
+/N	medical	7	Interdisciplinary Studies (IS)	3
+/N	medical	7	Elective	2
+/N	medical	7	Total	13
+/N	medical	8	BIOL 492m or 497	2
+/N	medical	8	CHEM 352 – Biochemistry II	3
+/N	medical	8	Experience United States Culture (EUSC)	3
+/N	medical	8	BIOL Elective (300-400 Level)	3-4
+/N	medical	8	Elective	3
+/N	medical	8	Total	14-15
+/N	technolog	1	BIOL 150 – Biology I (BLS, EL)	4
+/N	technology	1	CHEM 121A – General Chemistry I (BPS)	4
+/N	technology	1	CHEM 125A – General Chemistry Lab I (EL)	1
+/N	technology	1	ENG 101 – English Composition I	3
+/N	technology	1	MATH 125 - Pre-calculus Mathematics with Trigonometry	3
+/N	technology	1	Breadth Humanities (BHUM) or Experience United States Cultures (EUSC)	3
+/N	technology	1	Total	8
+/N	technology	2	BIOL 151 – Biology II (BLS, EL)	4
+/N	technology	2	CHEM 121B – General Chemistry II (BPS)  4
+/N	technology	2	CHEM 125B – General Chemistry Lab II (EL)   1
+/N	technology	2	ENG 102 – English Composition II    3
+/N	technology	2	ACS 101 or 103 - Oral Expression   3
+/N	technology	2	Total   15
+/N	technology	3	BIOL 220 – Genetics 4
+/N	technology	3	CHEM 241A – Organic Chemistry I (BPS)   3
+/N	technology	3	RA 101 - Reasoning & Argumentation or PHIL 213  3
+/N	technology	3	QR 101, Math 145 or MATH 150   3-5
+/N	technology	3	STAT 107 - Concepts of Stats or STAT 244 - Statistics (BICS)    3-4
+/N	technology	3	Total   16-18
+/N	technology	4	BIOL 319 – Cell & Molecular Biology 4
+/N	technology	4	CHEM 241B – Organic Chemistry II (BPS)  3
+/N	technology	4	CHEM 245 – Organic Chemistry Lab (EL)   2
+/N	technology	4	Breadth Social Science (BSS) or Experience Global Culture (EGC) 3
+/N	technology	4	PHYS 131/131L - College Physics I   5
+/N	technology	4	Total   17
+/N	technology	5	BIOL 350 – Microbiology 4
+/N	technology	5	CHEM 351 – Biochemistry 3
+/N	technology	5	PHYS 132/132L - College Physics II  5
+/N	technology	5	Breadth Find & Performing Arts (BFPA)   3
+/N	technology	5	Total   15
+/N	technology	6	BIOL 340 – Physiology   4
+/N	technology	6	BIOL 335 – Introduction to Immunology   3
+/N	technology	6	Health Experience (EH)  3
+/N	technology	6	Interdisciplinary Studies (IS)  3
+/N	technology	6	Total   13
+/N	technology	7	Hospital Clinical Education 18
+/N	technology	8	Hospital Clinical Educatio/N  n 18

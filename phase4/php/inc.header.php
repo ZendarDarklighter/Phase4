@@ -95,8 +95,8 @@
     <div class="sidebar block card leftanim no_desktop" id="mySidebar">
     <button class="baritem button large" onclick="w3_close()">Close &times;</button>
         <a href="home.php" class="baritem button">Home</a>
-        <a href="undergrad_home.php" class="baritem button">Undergraduate</a>
-        <a href="grad_home.php" class="baritem button">Graduates</a>
+        <a href="../undergrad/undergrad_home.php" class="baritem button">Undergraduate</a>
+        <a href="/phase4/grad/grad_home.php" class="baritem button">Graduates</a>
         <a href="#" class="baritem button">Student Resources</a>
         <a href="Calender.html" class="baritem button">Clubs and Events</a>
         <a href="#" class="baritem button">Facilities</a>

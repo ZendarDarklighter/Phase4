@@ -59,6 +59,30 @@ function get_research(){
         }
     }
 
+function get_admission(){
+        
+    global $content;
+            
+    try{
+        $pdo= new PDO(MYSQL_CONNECTION_STRING, DB_USER, DB_PWD);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+    echo "connected to data base<br/>"; //debug
+        
+        $sql = "SELECT content, contenttype FROM admission";
+       
+                $result_set = $pdo->query($sql);
+                $sql = NULL;
+                $content = $result_set->fetchAll(PDO::FETCH_ASSOC);
+        
+    echo "content extracted"; //debug
+            }
+            catch(PDOExceptoin $e){
+                echo"did not connect";
+                die();
+            }
+    }
+
 function display_content($value){
     if($value == NULL){
         echo "sql returned blank";
@@ -100,6 +124,35 @@ function display_research_content($value){
     }
         echo "</div>";
 }
-    
+  
+function display_admission_content($value){
+    if($value == NULL){
+        echo "sql returned blank";
+    }
+/*
+    foreach($value as $option){
+        
+        if($option['contenttype'] == 'h'){
+            echo '<h2>'.$option['content'].'</h2>';
+        }
+        elseif($option['contenttype'] == 'o'){
+            echo '<p><sapn face=Wingdings" class="wing" onclick="accordion()">o</span>'.$option['content'].'</p>';
+        }
+        elseif($option['contenttype'] == 'g'){
+            echo '<div class="panel"><p>'.$option['content'].'</p>';
+        }
+        else{
+            echo '<p>'.$option['content'].'</p>';
+        }
+    }
+    */
+}
+
+function echo_content($value){
+    if($value == NULL){
+        echo "sql returned blank";
+    }
+    else echo($value);
+}
 
 ?>

@@ -1,0 +1,76 @@
+/N	technology	h	Degree Requirements - Medical Technology
+/N	technology	h2	Core Requirements
+/N	technology	p	BIOL 150 BIOL 151 BIOL 220
+/N	technology	h2	Chemistry Requirements
+/N	technology	p	CHEM 121 a,b CHEM 125 a,b CHEM 241 a,b CHEM 245
+/N	technology	h2	Medical Technology Required Courses
+/N	technology	p	BIOL 319 BIOL 335 BIOL 340 BIOL 350  CHEM 351 or BIOL 332
+/N	technology	h2	Mathematics/Physics Requirements
+/N	technology	p	MATH 125 STAT 107 or 244  PHYS 131/131L, 132/132L or (PHYS 151/151L and PHYS 152/152L)
+/N	technology	p	Hospital Rotation (36 hours) — As biology majors, students in the medical technology curriculum take three years of prescribed course work at SIUE, then complete a fourth year of clinical/professional study in the clinical laboratory at one of SIUE’s affiliated hospitals. These students are not in residence on the SIUE campus during their senior year. Intern students move to the vicinity of the hospitals in St. Louis or Springfield. The department views the senior assignment for medical technology students in two ways: (1) successful completion of the hospital calendar year education program, and (2) achieving eligibility to apply for examination by the Board of Registry of the American Society of Clinical Pathologists, the certifying professional body in the United States. An outcome assessment also is provided by the scores received on the registry examination, which compares SIUE students’ performance with other students in the United States who take the examination at the same time.
+/N	medical	h2	Degree Requirements - Medical Science
+/N	medical	h3	Core Requirements
+/N	medical	p	BIOL 150 BIOL 151 BIOL 220
+/N	medical	h3	Chemistry Requirements
+/N	medical	p	CHEM 121 a,b CHEM 125 a,b CHEM 241 a,b CHEM 245
+/N	medical	h3	Medical Science Required Courses
+/N	medical	p	BIOL 319 BIOL 340  BIOL 430a,b or CHEM 351/352  BIOL 492  BIOL 492m or 497
+/N	medical	h3	Biology Electives (10 hours)
+/N	medical	p	Must include one 400-level elective course.
+/N	medical	h3	Mathematics/Physics Requirements
+/N	medical	p	MATH 145 or 150 STAT 244  PHYS 131/131L, 132/132L (or 151, 152, and 151L, 152L)
+/N	medical	p	Electives (5-7 hours)
+/N	integrative	h2	Degree Requirements - Integrative Biology
+/N	integrative	h3	Core Requirements
+/N	integrative	p	BIOL 150 BIOL 151 BIOL 220
+/N	integrative	h3	Chemistry Requirements
+/N	integrative	p	CHEM 121 a,b CHEM 125 a,b CHEM 241 a,b CHEM 245
+/N	integrative	h3	One course from the Ecology, Evolution and Behavior Area:
+/N	integrative	p	BIOL 327 BIOL 330 BIOL 365 BIOL 422a,b  BIOL 434 BIOL 435 BIOL 436 BIOL 461  BIOL 462 BIOL 463 BIOL 464 BIOL 465  BIOL 466 BIOL 468 BIOL 469 BIOL 470  BIOL 471 BIOL 480 BIOL 488
+/N	integrative	h3	One course from the Biological Diversity Area:
+/N	integrative	p	BIOL 350 BIOL 380 BIOL 471 BIOL 474  BIOL 483 BIOL 485 BIOL 486 BIOL 487 BIOL 488
+/N	integrative	h3	One course from the Morphology, Physiology and Development Area:
+/N	integrative	p	BIOL 330/ENSC 330 BIOL 337 BIOL 340 BIOL 423 BIOL 425 BIOL 433 BIOL/ENSC 434 BIOL 441 BIOL 461 BIOL 467 BIOL 472  BIOL 473 BIOL 481 BIOL 489
+/N	integrative	h3	One course from the Cellular and Molecular Area:
+/N	integrative	p	BIOL 319 BIOL 332 BIOL 335 BIOL 337 BIOL 415 BIOL 416 BIOL 418a,b BIOL 421 BIOL 430a BIOL 431 BIOL 432 BIOL 433 BIOL 451 BIOL 452 BIOL 455 BIOL 456
+/N	integrative	h3	Biological Sciences Electives (8-12 hours)
+/N	integrative	p	Two BIOL lecture courses must be taken at the 400 level, and three
+/N	integrative	p	BIOL courses above 220 must have a laboratory requirement. No course may be used for credit in more than one Area.
+/N	integrative	h3	Mathematics/Physics Requirements
+/N	integrative	p	MATH 145 or 150   STAT 244  PHYS 111 or PHYS 131/131L, 132/132L (or 151, 152, and 151L, 152L)
+/N	integrative	h3	Senior Assignment Requirements
+/N	integrative	p	BIOL 492 BIOL 492m or 497
+/N	integrative	h3	Electives (11-17 hours)
+/N	ecology	h2	Degree Requirements - Ecology, Evolution, & Environment
+/N	ecology	h3	Core Requirements
+/N	ecology	p	BIOL 150   BIOL 151  BIOL 220
+/N	ecology	h3	Chemistry Requirements
+/N	ecology	p	CHEM 121 a,b   CHEM 125 a,b  CHEM 241 a,b CHEM 245
+/N	ecology	h3	Ecology, Evolution and Environment Required Courses
+/N	ecology	p	BIOL 327   BIOL 365  BIOL 492 BIOL 492m or 497
+/N	ecology	h3	Biology EEE Electives (12-14 hours)
+/N	ecology	p	BIOL 330   BIOL 380  BIOL 422a BIOL 423 BIOL 434 BIOL 435 BIOL 462 BIOL 463 BIOL 464 BIOL 465  BIOL 466 BIOL 467 BIOL 468   BIOL 469  BIOL 470 BIOL 471   BIOL 472   BIOL 473  BIOL 474 BIOL 480   BIOL 483   BIOL 485  BIOL 486 BIOL 487   BIOL 488   BIOL 489
+/N	ecology	h3	Two 400-level courses required, and three courses must have labs among which must be at least one field course and at least one diversity course
+/N	ecology	h3	One course from Molecular/Cell/Physiology electives:
+/N	ecology	p	BIOL 319   BIOL 335  BIOL 337 BIOL 350  BIOL 415   BIOL 416  BIOL 421 BIOL 422   BIOL 451   BIOL 467  BIOL 472
+/N	ecology	h3	Mathematics/Physics Requirements
+/N	ecology	p	MATH 145 or 150    STAT 244  PHYS 111 or PHYS 131/131L, 132/132L (or 151, 152, and 151L, 152L)
+/N	ecology	h3	Electives (8-14 hours)
+/N	genetices	h2	Degree Requirements - Genetics and Cellular Biology
+/N	genetices	h3	Core Requirements
+/N	genetices	p	BIOL 150 BIOL 151 BIOL 220
+/N	genetices	h3	Chemistry Requirements
+/N	genetices	p	CHEM 121 a,b CHEM 125 a,b CHEM 241 a,b CHEM 245
+/N	genetices	h3	Genetics and Cellular Biology Required Courses
+/N	genetices	p	BIOL 319 BIOL 492 BIOL 492m or BIOL 497 p BIOL 430 a,b or CHEM 451 a,b
+/N	genetices	h3	Biology GCB Electives
+/N	genetices	p	BIOL 415 BIOL 418a BIOL 418b BIOL 421 BIOL 422a BIOL 425 BIOL 431 BIOL 432 BIOL 436 BIOL 452 BIOL 455 BIOL 472   BIOL 473
+/N	genetices	p <strong>Three of the above must be taken, including at least one lab course</strong>
+/N	genetices	h3  Biology Electives
+/N	genetices	p At least one additional 300-400 level BIOL elective must be taken from courses not on the GCB list above
+/N	genetices	h3  Mathematics/Physics Requirements
+/N	genetices	p MATH 145 or 150  STAT 244
+/N	genetices	p PHYS 131/131L, 132/132L (or 151, 152, and 151L, 152L)
+/N	genetices	Electives (8-10 hours)
+/N	all	p	Graduation Requirements
+/N	all	p	Complete all specific program requirements.<br/>Complete all University requirements including:<br/><li>All general education requirements</li><li>A minimum of 120 credit hours<li><li>At least 30 of which must be completed at SIUE</li><li>At least 60 of which must be completed at a regionally accredited 4-year institution</li><li>A minimum cumulative grade point average of 2.0</li><li>Bachelor of Arts only: one year of the same foreign language</li><li>File an Application for Graduation by the first day of the term in which you plan to graduate</li>
