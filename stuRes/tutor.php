@@ -14,7 +14,7 @@
 <script src="../../Phase4/js/sidebar.js"></script>
 <div id="stres_info">
 <div id="sidebar">
-    <script>sideBarLoad("Tutoring Offered","tutor.php?subj=null","Tutoring Home","tutor.php?subj=BIOL","Biology","tutor.php?subj=CHEM","Chemestry","tutor.php?subj=PHY","Physics","tutor.php?subj=MAT","Math");</script>
+    <script>sideBarLoad("Tutoring Offered","tutor.php?subj=null","Tutoring Home","tutor.php?subj=BIOL","Biology","tutor.php?subj=CHEM","Chemestry","tutor.php?subj=PHYS","Physics","tutor.php?subj=MATH","Math");</script>
 </div>
 <div id="center">
     <div id="tut_base">
