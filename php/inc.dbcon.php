@@ -16,8 +16,8 @@ catch(PDOException $e){
 function tablePrint($course){
     echo '<script>console.log("' . $course . '")</script>';
     global $conn;
-    $result = $conn->prepare("SELECT * FROM courses WHERE Dep = ':course'");
-    $result->bindParam(':course', $course);
+
+    $result = $conn->prepare("SELECT * FROM tut_sched WHERE Dep ='" . $course . "'");
     $result->execute();
     echo '<script>console.log("start of printing table for ' . $course . '");</script>';
     echo '<table class="basic" summary="Tutoring Hours">
@@ -70,6 +70,38 @@ function softwarePrint(){
         $output = $output . $row['descr'] . '</div><br><br>';
         echo $output;
     }
+}
+
+function printAllClasses(){
+    global $conn;
+    $result = $conn->query("SELECT departments.Department, course.Name, course.Num FROM course INNER JOIN departments ON course.Dep_Id=departments.Dep_Id");
+
+    while($row = $result->fetch()){
+        echo '<a href="course.php?class=' . $row['Name'] . '">' . $row['Department'] . ' ' . $row['Num'] . ' - ' . $row['Name'] . '</a>' ;
+    }
+}
+
+function printCourseClasses($course){
+    global $conn;
+    $result = $conn->query("SELECT departments.Department, course.Name, course.Num FROM course INNER JOIN departments ON course.Dep_Id=departments.Dep_Id WHERE Department= '" . $course . "' ");
+
+    while($row = $result->fetch()){
+        echo '<a href="course.php?class=' . $row['Name'] . '">' . $row['Department'] . ' ' . $row['Num'] . ' - ' . $row['Name'] . '</a>' ;
+    }
+}
+
+function PrintClassDescription($class){
+    global $conn;
+    $result = $conn->query("SELECT * FROM course INNER JOIN departments ON course.Dep_Id=departments.Dep_Id WHERE Name= '" . $class . "' ");
+
+    $row=$result->fetch();
+    echo '<h3>' . $row['Department'] . ' ' . $row['Num'] . ' - ' . $row['Name'] . '</h3>';
+    echo '<p>' . $row['Description'] . '</p><br><br>' ;
+    echo '<p>Credit Hours: ' . $row['Credits'] . '</p><br><br>' ;
+    echo '<p>Attributes: <br>' . $row['Attr'] . '</p><br><br>';
+    echo '<p>Professors:<br>' . $row['Professor'] . '</p><br><br>';
+
+
 }
 
 ?>
