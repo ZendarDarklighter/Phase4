@@ -87,7 +87,11 @@ function test_input($data) {
             <div id="sidebar"> 
                     <h2>Most Visited Links</h2>
                     <ul class="side_menu">
-                        
+                        <li><a href="#">Course Home Page</a></li>
+                        <li><a href="#">Tutoring</a></li>
+                        <li><a href="../StudentResources/Jobs-IO.php">Internships</a></li>
+                        <li><a href="#">Advising</a></li>
+                        <li><a href="../faculty/faculty.php">Faculty</a></li>  
                     </ul>
             </div>
             

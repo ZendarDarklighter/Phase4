@@ -1,6 +1,21 @@
 /* Vaibhav Patel*/
 /* Phase4 CSS   */
 
+.col-1 {width: 10%;}
+.col-2 {width: 20%;}
+.col-3 {width: 30%;}
+.col-4 {width: 40%;}
+.col-5 {width: 50%;}
+.col-6 {width: 60%;}
+.col-7 {width: 70%;}
+.col-7-5{width: 75%;}
+.col-8 {width: 80%;}
+.col-9 {width: 90%;}
+.col-10 {width: 100%;} 
+
+[class*="col-"] {
+    float: left;  
+}
 body {
 	margin: 0 5%;
 	padding: 0;
@@ -41,23 +56,6 @@ img {
     width: 100%; 
     height: 0px; 
     font-size: 0px;  
-}
-
-#header {
-	width: 100%;
-	height: 200px;
-	margin: 20px auto;
-}
-
-#site_title {
-	float: left;
-	margin-top: 120px;
-	width: 30%;
-    height: 200px;
-    display: block;
-	margin: 0px;
-	padding: 0px;
-
 }
 .slidemove {
 	float: right;
@@ -584,4 +582,251 @@ fieldset {
         display: none;
     }
     
+}
+
+/******************************************************************************
+Responsive Design for Mobile Screens      
+******************************************************************************/
+
+.sidebar{
+    background-color:#fff;position:fixed!important;z-index:1;overflow:auto;height: 100%;}
+.block{
+
+    text-align:left;padding:8px 16px;
+    display:block;text-align:left;border:none;outline:none;white-space:normal;float:none;
+}
+.card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+leftanim{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.baritem{padding:8px 16px;width:auto;display:block;width:100%;border:none;outline:none;white-space:normal;float:none;text-align:center;}
+
+.button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+
+.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.large{font-size:18px!important}
+.theme{color:#fff!important;background-color:darkgreen!important}
+.xlarge{font-size:24px!important}
+.container:after,.container:before{content:"";display:table;clear:both;
+padding:0.01em 16px}
+
+button {
+    float: left;
+    font-size: 20px;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+button.btnhide:after{
+    content: ""!important;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+.panel a:hover {
+
+    background-color: gray;
+}
+    @media only screen and (max-width: 767px) {
+    
+    .no_mobile{
+        display: none;
+    }
+    .desktop_only{
+        display: none;
+    }
+    .tablet_only{
+        display: none;
+    }
+    .site_title{
+        width:100%;
+    }
+    #site_title img{
+        width: 100%;
+
+    }
+    
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .post_section h2{
+        font-size: 1.2em;
+    }
+        
+    }
+/******************************************************************************  
+Responsive Design for Desktop Screens     
+******************************************************************************/
+
+    @media only screen and (min-width: 1321px){
+        .no_desktop{
+            display: none;
+        }
+        .tablet_only{
+            display:none;
+        }
+    
+        #header {
+            width: 100%;
+            height: 200px;
+            margin: 20px auto;
+        }
+        #site_title {
+            float: left;
+            margin-top: 120px;
+            width: 30%;
+            height: 200px;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .slidemove {
+            float: right;
+            margin-top: 120px;
+            width: 70%;
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .slider{
+            height: 200px;
+        }
+
+        .mySlides {
+            display:none;
+        }
+
+        #menu {
+            width: 100%;
+            height: 50px;
+            margin: 20px auto;
+            background: grey;
+            
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        #menu li {
+            float: left;
+            font-size: 20px;
+        }
+
+        #menu li a, .dropbtn {
+            display: inline-block;
+            color: lightgray;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #menu li a:hover,#menu .dropdown:hover .dropbtn {
+            background-color: crimson;
+        }
+
+        #menu li.dropdown {
+            display: inline-block;
+        }
+        #menu .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        #menu .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        #menu .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        #menu .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        iframe{
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 475px;
+        }
+    }
+
+
+/******************************************************************************
+Responsive Design for Tablet Screens       
+******************************************************************************/
+
+@media only screen and (min-width:768px) and (max-width: 1320px){
+    
+    .desktop_only{
+        display: none;
+    }
+    .no_tablet{
+        display:none;
+    }
+    .site_title{
+        height:200px;
+        width:100%;
+    }
+    #site_title img{
+        width: 100%;
+
+    }
 }
