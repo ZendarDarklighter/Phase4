@@ -603,6 +603,22 @@ table.basic th:first-child {text-align:right!important}
     background-color: #4CAF50;
     color: white;
 }
+@media only screen and (max-width: 1240px){
+    #course .tool{
+        float: right;
+    }
+    #menu, #sidebar, .clubheading-lg{
+        display: none;
+    }
+    #stres_info{
+        left: 10px;
+    }
+    #center{
+        float: left;
+        width: 100%;
+    }
+
+}
 @media only screen and (max-width: 1026px) {
     #menu, #sidebar, .clubheading-lg{
         display: none;
@@ -636,6 +652,9 @@ table.basic th:first-child {text-align:right!important}
     }
     .contact-hide{
         display: none;
+    }
+    #soft h1{
+        padding-bottom: 5px;
     }
 }
 @media only screen and (max-width: 610px) {

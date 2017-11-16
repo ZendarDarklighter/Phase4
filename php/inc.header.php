@@ -125,11 +125,11 @@
     
     <button class="accordion"> Student Resources</button>
         <div class="panel">
-            <a href="Home-SR.php">Resources Home</a>
-            <a href="Tut_Home.php">Tutoring</a>
-            <a href="Software.php">Software</a>
-            <a href="Adv_Home.php">Advising</a>
-            <a href="Course_Home.php">Course Information</a>
+            <a href="../stuRes/home.php">Resources Home</a>
+            <a href="../stuRes/tutor.php?subj=null">Tutoring</a>
+            <a href="../stuRes/software.php">Software</a>
+            <a href="../stuRes/advisor.php">Advising</a>
+            <a href="../stuRes/course.php">Course Information</a>
             <a href="../StudentResources/Jobs-JM.php">Job Market Info</a>
             <a href="../StudentResources/Jobs-IO.php">Internship Opportunities</a>
         </div>
